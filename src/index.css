@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Highlight animation for case studies */
+@keyframes highlight {
+  0% { 
+    box-shadow: 0 0 0 0 rgba(48, 38, 129, 0.4);
+    transform: scale(1);
+  }
+  50% { 
+    box-shadow: 0 0 0 20px rgba(48, 38, 129, 0.1);
+    transform: scale(1.02);
+  }
+  100% { 
+    box-shadow: 0 0 0 0 rgba(48, 38, 129, 0);
+    transform: scale(1);
+  }
+}
+
+.highlight-case {
+  animation: highlight 1.5s ease-out;
+  border-radius: 1rem;
+}
+
+/* Line clamp utility for blog excerpts */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Prose styling for blog content */
+.prose {
+  color: #374151;
+  max-width: none;
+}
+
+.prose p {
+  margin-bottom: 1.25em;
+}
+
+.prose-lg {
+  font-size: 1.125rem;
+  line-height: 1.7777778;
+}
+
+.prose-lg p {
+  margin-bottom: 1.3333333em;
+}
