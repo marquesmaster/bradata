@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import About from './components/About';
 import Blog from './components/Blog';
+import SolucoesPage from './pages/SolucoesPage'; // Importe a nova página de Soluções
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
           } />
           <Route path="/sobre" element={<About />} />
           <Route path="/blog" element={<Blog />} />
+          {/* Adicione a nova rota para a página de Soluções */}
+          <Route path="/solucoes" element={<SolucoesPage />} />
         </Routes>
         <Footer />
       </div>

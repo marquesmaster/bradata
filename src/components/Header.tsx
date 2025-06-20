@@ -70,7 +70,17 @@ const Header = () => {
                 </a>
               </>
             )}
-            <button 
+
+            {/* NOVO BOTÃO: Soluções */}
+            <Link
+              to="/solucoes" // Leva para a nova página de soluções
+              className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-all duration-200 font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              onClick={() => setIsMenuOpen(false)} // Garante que o menu mobile feche
+            >
+              Soluções
+            </Link>
+
+            <button
               onClick={handleContactClick}
               className="bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-all duration-200 font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
@@ -116,7 +126,15 @@ const Header = () => {
                   </a>
                 </>
               )}
-              <button 
+              {/* NOVO BOTÃO: Soluções (Mobile) */}
+              <Link
+                to="/solucoes" // Leva para a nova página de soluções
+                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-all duration-200 font-medium shadow-lg mx-2 mt-2"
+                onClick={() => setIsMenuOpen(false)} // Fecha o menu mobile
+              >
+                Soluções
+              </Link>
+              <button
                 onClick={handleContactClick}
                 className="bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-all duration-200 font-medium shadow-lg mx-2 mt-2"
               >
