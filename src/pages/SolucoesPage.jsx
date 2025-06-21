@@ -15,7 +15,7 @@ const SolucoesPage = () => {
       id: 'bradata-erp',
       title: 'ERP Bradata',
       description: 'Conheça o sistema ERP da Bradata para otimizar seus processos de negócios.',
-      link: 'https://erpbradata.com.br/', // Exemplo de outro link
+      link: 'https://hilarious-daffodil-f9e3d3.netlify.app', // Exemplo de outro link
     },
     {
       id: 'logistica-inteligente',
