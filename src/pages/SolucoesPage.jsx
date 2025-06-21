@@ -9,7 +9,7 @@ const SolucoesPage = () => {
       id: 'typmann-crm',
       title: 'CRM Typmann',
       description: 'Nosso avançado sistema de CRM da Typmann para gestão de clientes e vendas.',
-      link: 'https://crmbradata.netlify.app/',
+      link: 'https://crmtypmann.netlify.app/',
     },
     {
       id: 'bradata-erp',
